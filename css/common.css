@@ -1,3 +1,102 @@
-body{
+body {
 	font-size:20px;
+}
+
+h1 {
+	font-size: 85px;
+	font-weight: 700;
+	margin-block-start: 0;
+	margin-block-end: 0;
+	margin-bottom: 4px;
+	letter-spacing: 10px;
+}
+
+h2 {
+	font-size: 60px;
+	font-weight: 500;
+	margin-block-start: 0;
+	margin-block-end: 0;
+	margin-bottom: 10px;
+	letter-spacing: 4px;
+}
+
+h3 {
+	font-size: 18px;
+	font-weight: 400;
+	margin-block-start: 0;
+	margin-block-end: 0;
+	margin-bottom: 4px;
+	color: #888;
+}
+
+p {
+	margin-block-start: 0;
+	margin-block-end: 0;
+}
+
+.titleText {
+	padding-top: 30px;
+	font-weight: 400;
+}
+
+.navText {
+	margin-left: 20px;
+	font-weight: 400;
+	color: #888;
+}
+
+.bodyText {
+	font-size: 14px;
+	font-weight: 400;
+	margin-top: 0 !important;
+	color: #888;
+}
+
+.grid {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: 3.6fr 3.6fr 2.8fr;
+	height: 100vh;
+	width: 100vw;
+	min-width: 1500px;
+	min-height: 900px;
+	margin: 0;
+
+	grid-template-areas: 
+	'A1 A2 A2 A3'
+	'B1 B2 B3 B4'
+	'C1 C2 C3 C4'
+	;
+}
+
+.grid > * {
+	padding-left: 40px;
+	padding-top: 30px;
+	border: #e5e5e5 solid 1px;
+	position: relative;
+}
+
+.grid > :not(.A1, .A2, .A3) > :last-child {
+	position: absolute;
+	bottom: 35px;
+}
+
+.A1, .A2, .A3 {
+	padding-top: 120px !important;
+}
+
+.A2 {
+	grid-area: A2;
+	position: relative;
+}
+
+.A2 > h1{
+	position: absolute;
+	top: 120px;
+}
+
+.A2 > nav {
+	position: absolute;
+	top: 150px;
+	right: 40px;
 }
