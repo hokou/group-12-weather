@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>紫外線指數</title>
+	<!-- 建立整體樣式指導：基礎字型、字體、基底色、標題、段落樣式等等 -->
+	<link rel="stylesheet" type="text/css" href="css/common.css" />
+	<!-- 建立雨量觀測部份的樣式 -->
+</head>
+
+<body class="grid">
+	<div class="A1">
+		<p class="titleText">提供氣象站每日紫外線指數最大值</p>
+	</div>
+	<div class="A2">
+		<h1>紫外光照</h1>
+		<nav>
+			<a class="navText" href="weather.html">近日預測</a>
+			<a class="navText" href="raining.html">降雨資訊</a>
+			<a class="navText" href="uv.html">紫外光照</a>
+		</nav>
+        
+	</div>
+	<div class="A3"></div>
+	<div class="B1">
+        <p>紫外線指數是指到達地面單位面積的紫外線輻射量強度的數值，紫外線指數
+        越大，代表一定時間中累積的紫外線輻射強度越強。為使民眾免於受到戶外紫外
+        線的傷害，氣象局所預報的「紫外線指數」為中午前後的最大輻射強度。</p>
+
+        <br><br>
+        <p>依據世界衛生組織相關規範，針對紫外線指數分級如下表：其中指數小於等
+        於 2 時為低量級、指數 3～5 為中量級，指數 6～7 為高量級，指數 8～10 為過量級
+        ，指數大於等於 11 則為危險級。</p>
+    
+        <p class="bodyText"></p>
+    </div>
+	<div class="B2" id="B2"> 
+    </div>
+	<div class="B3" id="B3">
+	</div>
+	<div class="B4" id="B4">
+    </div>
+	<div class="C1">
+   
+        <p>紫外線易對皮膚、眼睛造成傷害，在高量級紫外線下曝曬，可在 30 分鐘內導
+        致傷害，過量級以上則在更短時間內即可造成傷害。</p>
+
+        <p class="bodyText"></p></div>
+	<div class="C2">
+    </div>
+	<div class="C3">
+    </div>
+	<div class="C4"></div>
+	<script>
+		const CWB_API_KEY="CWB-2EF6C203-2256-404D-AD80-5E9DE0982C6A";
+	</script>
+	<script src="js/uv.js"></script>
+</body>
+
+</html>
