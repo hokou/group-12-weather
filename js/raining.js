@@ -8,7 +8,7 @@ image(B1, "P7010089.jpg");
 image(C4,"P5090484.jpg");
 
 function image(block, img){
-	block.style.backgroundImage = `url("/images/${img}")`;
+	block.style.backgroundImage = `url("images/${img}")`;
 	block.style.backgroundSize="auto 100%";
 	block.style.backgrounAttachment="scroll";
 }
