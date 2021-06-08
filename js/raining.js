@@ -24,3 +24,4 @@ function renderRaining(page){
 		container.appendChild(item);
 	}
 }
+
