@@ -1,4 +1,6 @@
 let records=null;
+
+
 fetch("https://opendata.cwb.gov.tw/api/v1/rest/datastore/O-A0005-001?Authorization="+CWB_API_KEY).then((response)=>{
 	return response.json();
 }).then((data)=>{
@@ -111,8 +113,10 @@ fetch("https://opendata.cwb.gov.tw/api/v1/rest/datastore/O-A0005-001?Authorizati
         B2.appendChild(B2h3);
         let B2h2 = document.createElement("h2");
         let B2value = document.createTextNode(records[j].value);
+        let p = document.createElement('p');
         B2h2.appendChild(B2value);
         B2.appendChild(B2h2);
+        B2.appendChild(p);
     }
 
 
@@ -124,8 +128,10 @@ fetch("https://opendata.cwb.gov.tw/api/v1/rest/datastore/O-A0005-001?Authorizati
         B3.appendChild(B3h3);
         let B3h2 = document.createElement("h2");
         let B3value = document.createTextNode(records[j].value);
+        let p = document.createElement('p');
         B3h2.appendChild(B3value);
         B3.appendChild(B3h2);
+        B3.appendChild(p);
     }
 
 
@@ -137,8 +143,10 @@ fetch("https://opendata.cwb.gov.tw/api/v1/rest/datastore/O-A0005-001?Authorizati
         B4.appendChild(B4h3);
         let B4h2 = document.createElement("h2");
         let B4value = document.createTextNode(records[j].value);
+        let p = document.createElement('p');
         B4h2.appendChild(B4value);
         B4.appendChild(B4h2);
+        B4.appendChild(p);
     }
 
 
@@ -150,8 +158,10 @@ fetch("https://opendata.cwb.gov.tw/api/v1/rest/datastore/O-A0005-001?Authorizati
         C2.appendChild(C2h3);
         let C2h2 = document.createElement("h2");
         let C2value = document.createTextNode(records[j].value);
+        let p = document.createElement('p');
         C2h2.appendChild(C2value);
         C2.appendChild(C2h2);
+        C2.appendChild(p);
     }
 
 
@@ -163,8 +173,10 @@ fetch("https://opendata.cwb.gov.tw/api/v1/rest/datastore/O-A0005-001?Authorizati
         C3.appendChild(C3h3);
         let C3h2 = document.createElement("h2");
         let C3value = document.createTextNode(records[j].value);
+        let p = document.createElement('p');
         C3h2.appendChild(C3value);
         C3.appendChild(C3h2);
+        C3.appendChild(p);
     }
 
 
@@ -176,8 +188,10 @@ fetch("https://opendata.cwb.gov.tw/api/v1/rest/datastore/O-A0005-001?Authorizati
         C4.appendChild(C4h3);
         let C4h2 = document.createElement("h2");
         let C4value = document.createTextNode(records[j].value);
+        let p = document.createElement('p');
         C4h2.appendChild(C4value);
         C4.appendChild(C4h2);
+        C4.appendChild(p);
     }
 
 
