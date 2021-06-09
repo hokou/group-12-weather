@@ -170,7 +170,7 @@ a {
 
 }
 
-.uvGridUnit:last-child {
-	position: relative;
-	bottom: auto;
+.uvGridUnit > :last-child {
+	position: relative !important;
+	bottom: auto !important;
 }
