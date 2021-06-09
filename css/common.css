@@ -94,6 +94,10 @@ a {
 	bottom: 35px;
 }
 
+.grid > :not(.A1, .A2, .A3) {
+	padding-right: 40px;
+}
+
 .A1, .A2, .A3 {
 	padding-top: 120px !important;
 }
