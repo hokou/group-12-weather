@@ -1,5 +1,5 @@
 # group-12-weather
-A simple  project for cooperation
+A simple  project for cooperation  
 https://motestw64631.github.io/group-12-weather/weather
 
 第十二小組
@@ -7,7 +7,7 @@ https://motestw64631.github.io/group-12-weather/weather
 
 陳希聖為 Host
 
-以下為分工
+以下為分工  
 廖浩宇 Hao-yu, Liao
 專案基礎架構
 common.css
