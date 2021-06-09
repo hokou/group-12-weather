@@ -130,6 +130,11 @@ function weatherView() {
 
 getWeather('臺北市').then(() => weatherView());
 
+document.getElementById('country').style.border = '0';
+document.getElementById('country').style.outline = '0';
+document.getElementById('country').style.fontSize = '50px';
+document.getElementById('country').style.fontWeight = 'bold';
+
 
 document.getElementById('country').addEventListener('change', function (e) {
     let country = e.target.value;
