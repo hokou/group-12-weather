@@ -114,9 +114,6 @@ fetch("https://opendata.cwb.gov.tw/api/v1/rest/datastore/O-A0005-001?Authorizati
         B2h2.appendChild(B2value);
         B2.appendChild(B2h2);
     }
-    let B2p = document.createElement("p");
-    B2p.setAttribute("class","bodyText");
-    B2.appendChild(B2p);
 
 
     for( j = 3 ; j < 6 ; j++){
@@ -130,9 +127,6 @@ fetch("https://opendata.cwb.gov.tw/api/v1/rest/datastore/O-A0005-001?Authorizati
         B3h2.appendChild(B3value);
         B3.appendChild(B3h2);
     }
-    let B3p = document.createElement("p");
-    B3p.setAttribute("class","bodyText");
-    B3.appendChild(B3p);
 
 
     for( j = 6 ; j < 9 ; j++){
@@ -146,11 +140,9 @@ fetch("https://opendata.cwb.gov.tw/api/v1/rest/datastore/O-A0005-001?Authorizati
         B4h2.appendChild(B4value);
         B4.appendChild(B4h2);
     }
-    let B4p = document.createElement("p");
-    B4p.setAttribute("class","bodyText");
-    B4.appendChild(B4p);
 
-    for( j = 9 ; j < 12 ; j++){
+
+    for( j = 9 ; j < 11 ; j++){
         let C2 = document.querySelector("#C2");
         let C2h3 = document.createElement("h3");
         let C2location = document.createTextNode(records[j].locationCode);
@@ -161,11 +153,9 @@ fetch("https://opendata.cwb.gov.tw/api/v1/rest/datastore/O-A0005-001?Authorizati
         C2h2.appendChild(C2value);
         C2.appendChild(C2h2);
     }
-    let C2p = document.createElement("p");
-    C2p.setAttribute("class","bodyText");
-    C2.appendChild(C2p);
 
-    for( j = 12 ; j < 15 ; j++){
+
+    for( j = 11 ; j < 13 ; j++){
         let C3 = document.querySelector("#C3");
         let C3h3 = document.createElement("h3");
         let C3location = document.createTextNode(records[j].locationCode);
@@ -176,11 +166,9 @@ fetch("https://opendata.cwb.gov.tw/api/v1/rest/datastore/O-A0005-001?Authorizati
         C3h2.appendChild(C3value);
         C3.appendChild(C3h2);
     }
-    let C3p = document.createElement("p");
-    C3p.setAttribute("class","bodyText");
-    C3.appendChild(C3p);
 
-    for( j = 15 ; j < 18 ; j++){
+
+    for( j = 13 ; j < 15 ; j++){
         let C4 = document.querySelector("#C4");
         let C4h3 = document.createElement("h3");
         let C4location = document.createTextNode(records[j].locationCode);
@@ -191,9 +179,6 @@ fetch("https://opendata.cwb.gov.tw/api/v1/rest/datastore/O-A0005-001?Authorizati
         C4h2.appendChild(C4value);
         C4.appendChild(C4h2);
     }
-    let C4p = document.createElement("p");
-    C4p.setAttribute("class","bodyText");
-    C4.appendChild(C4p);
 
 
 });
