@@ -1,3 +1,7 @@
+// 中央氣象局開放資料平臺之資料擷取API：https://opendata.cwb.gov.tw/dist/opendata-swagger.html
+// 測站代碼：http://e-service.cwb.gov.tw/wdps/obs/state.htm
+// 自動雨量站-雨量觀測資料：https://data.gov.tw/dataset/9177
+// 自動雨量站資料集說明檔：https://opendata.cwb.gov.tw/opendatadoc/DIV2/A0002-001.pdf
 
 const rain_url = "https://opendata.cwb.gov.tw/api/v1/rest/datastore/O-A0002-001?Authorization="
 
@@ -8,9 +12,9 @@ image(B1, "P7010089.jpg");
 image(C4,"P5090484.jpg");
 
 function image(block, img){
-	block.style.backgroundImage = `url("/images/${img}")`;
-	block.style.backgroundSize="auto 100%";
-	block.style.backgrounAttachment="scroll";
+	block.style.backgroundImage = `url("images/${img}")`;
+	block.style.backgroundSize="cover";
+	block.style.backgroundAttachment="scroll";
 }
 
 let area_list = ["臺北","臺中","高雄","桃園","新竹","臺南"]
@@ -28,7 +32,9 @@ function rain_data(locationName, block) {
 		console.log(data.locationName);
 		let JSON = data_get(data);
 		block_render(block, JSON);
-    });
+    }).catch((error) => {
+        console.log("err:", error)
+	});
 }
 
 function data_get(data) {
