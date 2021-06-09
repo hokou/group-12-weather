@@ -162,6 +162,11 @@ a {
 	bottom: 5%;
 }
 
-.uvGridUnit{
-	
+.uvGridUnit {
+
+}
+
+.uvGridUnit:last-child {
+	position: relative;
+	bottom: auto;
 }
