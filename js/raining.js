@@ -13,6 +13,7 @@ image(C4,"P5090484.jpg");
 
 function image(block, img){
 	block.style.backgroundImage = `url("images/${img}")`;
+
 	block.style.backgroundSize="cover";
 	block.style.backgroundAttachment="scroll";
 }
