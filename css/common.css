@@ -1,18 +1,25 @@
+html {
+	font-size: 1vw;
+}
+
 body {
 	font-size:20px;
 }
 
 h1 {
-	font-size: 85px;
+	font-size: 60px;
 	font-weight: 700;
 	margin-block-start: 0;
 	margin-block-end: 0;
 	margin-bottom: 4px;
-	letter-spacing: 10px;
+	letter-spacing: 4px;
+
+	display: flex;
+	flex-wrap: wrap;
 }
 
 h2 {
-	font-size: 60px;
+	font-size: 40px;
 	font-weight: 500;
 	margin-block-start: 0;
 	margin-block-end: 0;
@@ -34,9 +41,14 @@ p {
 	margin-block-end: 0;
 }
 
+a {
+	text-decoration: none;
+}
+
 .titleText {
 	padding-top: 30px;
 	font-weight: 400;
+	font-style: italic;
 }
 
 .navText {
@@ -56,10 +68,10 @@ p {
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
 	grid-template-rows: 3.6fr 3.6fr 2.8fr;
-	height: 100vh;
 	width: 100vw;
-	min-width: 1500px;
-	min-height: 900px;
+	height: 100vh;
+	min-width: 1920px;
+	min-height: 1000px;
 	margin: 0;
 
 	grid-template-areas: 
@@ -74,6 +86,7 @@ p {
 	padding-top: 30px;
 	border: #e5e5e5 solid 1px;
 	position: relative;
+	overflow: hidden;
 }
 
 .grid > :not(.A1, .A2, .A3) > :last-child {
@@ -85,9 +98,51 @@ p {
 	padding-top: 120px !important;
 }
 
+.A1 {
+	grid-area: A1;
+}
+
 .A2 {
 	grid-area: A2;
 	position: relative;
+}
+
+.A3 {
+	grid-area: A3;
+}
+
+.B1 {
+	grid-area: B1;
+}
+
+.B2 {
+	grid-area: B2;
+	position: relative;
+}
+
+.B3 {
+	grid-area: B3;
+}
+
+.B4 {
+	grid-area: B4;
+}
+
+.C1 {
+	grid-area: C1;
+}
+
+.C2 {
+	grid-area: C2;
+	position: relative;
+}
+
+.C3 {
+	grid-area: C3;
+}
+
+.C4 {
+	grid-area: C4;
 }
 
 .A2 > h1{
@@ -99,4 +154,14 @@ p {
 	position: absolute;
 	top: 150px;
 	right: 40px;
+}
+
+.w-img {
+	position: absolute;
+	right: 5%;
+	bottom: 5%;
+}
+
+.uvGridUnit{
+	
 }
