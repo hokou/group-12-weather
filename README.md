@@ -28,7 +28,7 @@ code review
 uv.html
 uv.js  
 
-# 討論流程
+# 開發流程
 
 ## 1.討論分工模式  
 因為希望大家都能夠同時進行這個project  
