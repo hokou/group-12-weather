@@ -36,7 +36,8 @@ uv.js
 並由一個人寫css來同時對應這三個功能
   
 ## 2.尋找開發功能
-在氣象局API中尋找適合此次開發的api => (天氣概況.雨量預測.紫外線預測)
+在氣象局API中尋找適合此次開發的api => (天氣概況.雨量預測.紫外線預測)  
+https://opendata.cwb.gov.tw/dist/opendata-swagger.html
 
 ## 3.決定基礎骨架
 由**廖浩宇**負責html的基本版型以及最初的CSS  
