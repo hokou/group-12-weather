@@ -1,13 +1,13 @@
 html {
-	font-size: 1vw;
+	font-size: 0.2vw;
 }
 
 body {
-	font-size:20px;
+	font-size:15px;
 }
 
 h1 {
-	font-size: 60px;
+	font-size: 50px;
 	font-weight: 700;
 	margin-block-start: 0;
 	margin-block-end: 0;
@@ -19,8 +19,8 @@ h1 {
 }
 
 h2 {
-	font-size: 40px;
-	font-weight: 500;
+	font-size: 20px;
+	font-weight: 1000;
 	margin-block-start: 0;
 	margin-block-end: 0;
 	margin-bottom: 10px;
@@ -28,7 +28,7 @@ h2 {
 }
 
 h3 {
-	font-size: 18px;
+	font-size: 9px;
 	font-weight: 400;
 	margin-block-start: 0;
 	margin-block-end: 0;
@@ -58,7 +58,7 @@ a {
 }
 
 .bodyText {
-	font-size: 14px;
+	font-size: 8px;
 	font-weight: 400;
 	margin-top: 0 !important;
 	color: #888;
@@ -70,8 +70,6 @@ a {
 	grid-template-rows: 3.6fr 3.6fr 2.8fr;
 	width: 100vw;
 	height: 100vh;
-	min-width: 1920px;
-	min-height: 1000px;
 	margin: 0;
 
 	grid-template-areas: 
@@ -92,6 +90,10 @@ a {
 .grid > :not(.A1, .A2, .A3) > :last-child {
 	position: absolute;
 	bottom: 35px;
+}
+
+.grid > :not(.A1, .A2, .A3) {
+	padding-right: 40px;
 }
 
 .A1, .A2, .A3 {
@@ -162,6 +164,11 @@ a {
 	bottom: 5%;
 }
 
-.uvGridUnit{
-	
+.uvGridUnit {
+
+}
+
+.uvGridUnit > :last-child {
+	position: relative !important;
+	bottom: auto !important;
 }
