@@ -8,6 +8,13 @@ const rain_url = "https://opendata.cwa.gov.tw/api/v1/rest/datastore/O-A0002-001?
 let B1 = document.querySelector(".B1");
 let C4 = document.querySelector(".C4");
 
+let area_list = ["臺北","臺中","高雄","桃園","新竹","臺南"]
+let div_list = ["B2","B3","B4","C1","C2","C3"]
+
+for (let i=0; i<area_list.length; i++) {
+	rain_data(area_list[i], div_list[i]);
+}
+
 image(B1, "P7010089_min.jpg");
 image(C4,"P5090484_min.jpg");
 
@@ -16,13 +23,6 @@ function image(block, img){
 
 	block.style.backgroundSize="cover";
 	block.style.backgroundAttachment="scroll";
-}
-
-let area_list = ["臺北","臺中","高雄","桃園","新竹","臺南"]
-let div_list = ["B2","B3","B4","C1","C2","C3"]
-
-for (let i=0; i<area_list.length; i++) {
-	rain_data(area_list[i], div_list[i]);
 }
 
 function rain_data(locationName, block) {
