@@ -50,7 +50,7 @@ function weatherImage(num) {
 }
 
 function getWeather(locationName) {
-    return fetch("https://opendata.cwb.gov.tw/api/v1/rest/datastore/F-D0047-091?Authorization=" + CWB_API_KEY + '&' + 'locationName=' + locationName).then((response) => {
+    return fetch("https://opendata.cwa.gov.tw/api/v1/rest/datastore/F-D0047-091?Authorization=" + CWA_API_KEY + '&' + 'locationName=' + locationName).then((response) => {
         return response.json();
     }).then((jsonData) => {
         data = jsonData
