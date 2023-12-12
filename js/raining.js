@@ -3,13 +3,13 @@
 // 自動雨量站-雨量觀測資料：https://data.gov.tw/dataset/9177
 // 自動雨量站資料集說明檔：https://opendata.cwb.gov.tw/opendatadoc/DIV2/A0002-001.pdf
 
-const rain_url = "https://opendata.cwb.gov.tw/api/v1/rest/datastore/O-A0002-001?Authorization="
+const rain_url = "https://opendata.cwa.gov.tw/api/v1/rest/datastore/O-A0002-001?Authorization="
 
 let B1 = document.querySelector(".B1");
 let C4 = document.querySelector(".C4");
 
-image(B1, "P7010089.jpg");
-image(C4,"P5090484.jpg");
+image(B1, "P7010089_min.jpg");
+image(C4,"P5090484_min.jpg");
 
 function image(block, img){
 	block.style.backgroundImage = `url("images/${img}")`;
@@ -26,11 +26,11 @@ for (let i=0; i<area_list.length; i++) {
 }
 
 function rain_data(locationName, block) {
-    fetch(rain_url + CWB_API_KEY + '&' + 'locationName=' + locationName).then((response) => {
+    fetch(rain_url + CWA_API_KEY + '&' + 'StationName=' + locationName).then((response) => {
         return response.json();
     }).then((result) => {
-		let data = result.records.location[0];
-		console.log(data.locationName);
+		let data = result.records.Station[0];
+		console.log(data.StationName);
 		let JSON = data_get(data);
 		block_render(block, JSON);
     }).catch((error) => {
@@ -39,24 +39,16 @@ function rain_data(locationName, block) {
 }
 
 function data_get(data) {
-	let name = data.locationName;
-	let obsTime = data.time.obsTime;
-	let weatherElement = data.weatherElement;
+	let name = data.StationName;
+	let obsTime = data.ObsTime.DateTime;
+	let weatherElement = data.RainfallElement;
 	let NOW;
 	let RAIN;
 	let HOUR_12;
 	console.log(weatherElement);
-	weatherElement.forEach(element => {
-		if (element.elementName === "NOW"){
-			NOW = check_val(element.elementValue);
-		}
-		if (element.elementName === "RAIN"){
-			RAIN = check_val(element.elementValue);
-		}
-		if (element.elementName === "HOUR_12"){
-			HOUR_12 = check_val(element.elementValue);
-		}
-	});
+	NOW = check_val(weatherElement.Now.Precipitation);
+	RAIN = check_val(weatherElement.Past1hr.Precipitation);
+	HOUR_12 = check_val(weatherElement.Past12hr.Precipitation);
 
 	let JSON = {
 		"name":name,
