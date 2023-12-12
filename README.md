@@ -1,6 +1,26 @@
 # group-12-weather
+
 A simple  project for cooperation  
-https://motestw64631.github.io/group-12-weather/weather
+https://hokou.github.io/group-12-weather/weather
+
+# 202312 更新
+
+## 更新項目
+
+- 修正 API 網址、授權碼
+- CSS 字體修正
+- 氣象預報：調整 API 變數
+- 雨量觀測：調整 API 變數、參數調整、圖片壓縮
+- 紫外線：調整 API 變數、資料取得方式調整
+
+## API 資訊
+
+- 中央氣象署開放資料平臺之資料擷取API：https://opendata.cwa.gov.tw/dist/opendata-swagger.html
+- 鄉鎮天氣預報-台灣未來1週天氣預報：https://opendata.cwa.gov.tw/dataset/forecast/F-D0047-091
+- 自動雨量站-雨量觀測資料：https://opendata.cwa.gov.tw/dataset/observation/O-A0002-001
+- 紫外線指數-每日紫外線指數最大值：https://opendata.cwa.gov.tw/dataset/observation/O-A0005-001
+
+# group-12-weather
 
 第十二小組
 陳希聖 Shaun Chen、蕭輔廣 Hokou、蘇信華 Denny Su、廖浩宇 Hao-yu, Liao  
